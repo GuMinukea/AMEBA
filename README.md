@@ -1,73 +1,149 @@
 # ameba
 
-ameba is a responsive digital game marketplace MVP inspired by Eneba's marketplace layout. It uses a React + TypeScript frontend and a PHP JSON REST API with SQLite. Product and homepage content comes from backend endpoints; React contains no catalog data. The idempotent demo seed currently provides 23 products with seller offers, including Nintendo Switch listings.
+A responsive digital game marketplace MVP inspired by Eneba. Built with React, TypeScript, PHP REST API, and SQLite.
+
+## Features
+
+- Dynamic homepage with banners, bestsellers, and deals
+- Game catalog with search, filters, and sorting
+- Genre, platform, region, and price filters
+- Product pages with multiple seller offers
+- Shopping cart and wishlist
+- User registration and authentication
+- Simulated checkout and digital key delivery
+- User-specific order history
+- EUR and USD currency display
+- Responsive dark-themed interface
+
+## Tech Stack
+
+- **Frontend:** React, TypeScript, Vite
+- **Backend:** PHP 8.1+
+- **API:** JSON REST API
+- **Database:** SQLite
+- **Database access:** PDO SQLite
 
 ## Requirements
 
-- Node.js 20+ and npm.
-- PHP 8.1+ with PDO SQLite enabled.
+- Node.js 20+
+- npm
+- PHP 8.1+ with PDO SQLite enabled
 
-The current environment has Node 26 installed under `C:\Program Files\nodejs` (not on PATH), but does not have PHP, Composer, Git, or Docker. Use PHP from a local install or host the API on a PHP service. No Composer packages are required.
+No Composer packages are required.
 
-## Run locally
+## Getting Started
 
-1. Copy `.env.example` to `.env` and adjust values if desired. The PHP API reads this file directly; process environment values take precedence. The existing SQLite file remains `data/pixelmarket.sqlite` so the rebrand preserves current data; this is a legacy filename only.
-2. Start the API from the project root: `php -S 127.0.0.1:8001 -t api api/index.php`.
-3. In a second terminal: `npm install` then `npm run dev`.
-4. Confirm `http://127.0.0.1:8001/api/health` returns `{"status":"ok","database":"sqlite"}`, then open `http://localhost:5173`. Vite proxies `/api` requests to `API_URL` from `.env` (default `http://127.0.0.1:8001`). The API initializes SQLite and idempotently fills in any missing demo products, offers, and keys when handling a request; existing products, offers, users, and orders are preserved.
+### 1. Clone the repository
 
-Register an account to try simulated checkout and order history. Passwords are hashed. No real card data or payment is used.
+```bash
+git clone https://github.com/GuMinukea/AMEBA.git
+cd AMEBA
+```
 
-## Install PHP on Windows
+### 2. Configure environment
 
-For this project, the CLI and built-in web server are enough. On a 64-bit Windows PC:
+Copy `.env.example` to `.env`.
 
-1. Install the **Microsoft Visual C++ Redistributable 2015–2022 x64** if it is not already installed.
-2. From the [official PHP for Windows downloads](https://windows.php.net/download/), download the current stable **x64 Non Thread Safe ZIP** build. NTS is the CLI/FastCGI build type; avoid a source package or debug pack.
-3. Extract it to `C:\tools\php` (so `C:\tools\php\php.exe` exists).
-4. In that directory, copy `php.ini-development` to `php.ini`. Edit `php.ini`: set `extension_dir = "ext"`, and enable `extension=pdo_sqlite` and `extension=sqlite3` (remove a leading `;` if those lines are already present). Confirm the corresponding DLLs exist in `C:\tools\php\ext`.
-5. Add `C:\tools\php` to your Windows user `Path` under **Settings → System → About → Advanced system settings → Environment Variables**. Open a fresh PowerShell window so it reads the updated PATH. Keeping the PHP directory in PATH also makes its SQLite DLL available to Windows.
-6. Verify the install:
+Default local configuration:
 
-   ```powershell
-   php -v
-   php --ini
-   php -m | Select-String 'PDO|pdo_sqlite|sqlite3'
-   ```
+```env
+APP_ENV=development
+APP_URL=http://localhost:5173
+APP_ORIGIN=http://localhost:5173
+API_URL=http://127.0.0.1:8001
+VITE_API_BASE=/api
+DB_PATH=./data/pixelmarket.sqlite
+SESSION_SECURE=false
+```
 
-   The module list should include `PDO`, `pdo_sqlite`, and `sqlite3`. PHP's Windows documentation explains the [binary/build choices](https://www.php.net/manual/en/install.windows.manual.php); the PDO docs list the [Windows driver setting](https://www.php.net/manual/en/pdo.installation.php) and the [SQLite DLL requirement](https://www.php.net/pdo-sqlite).
+### 3. Start the backend
 
-Then start the backend from the project root with `php -S 127.0.0.1:8001 -t api api/index.php` and the frontend in a second terminal with Node on PATH using `npm install` and `npm run dev`.
+```bash
+php -S 127.0.0.1:8001 -t api api/index.php
+```
 
-## Architecture
+### 4. Install and start the frontend
 
-- `src/ui/App.tsx`: single-page React app, shared state, REST calls, and screens.
-- `src/ui/HomePage.tsx`: ameba campaign banner and platform shortcuts, using the existing homepage API data.
-- `src/ui/MarketplaceHeader.tsx`: shared search, navigation, account, and cart header.
-- `public/ameba-logo.svg` and `public/favicon.svg`: original ameba logo and favicon.
-- `src/ui/styles.css`: responsive dark purple marketplace styling.
-- `api/index.php`: small PHP router, SQLite initialization/seeding, catalog, session auth, checkout, and order history.
-- `database/schema.sql`: database schema reference.
-- `docs/API.md`: route reference.
+In a separate terminal:
 
-Each homepage block calls its own route (`/home/banner`, `/home/bestsellers`, `/home/deals`). Search supports partial names, with a basic typo fallback. Catalog filters and sorting are API-backed. Product detail URLs use `/product/{slug}` and retain browser history navigation. Checkout reserves inventory inside a database transaction and returns one demo key per purchased unit; selecting a seller offer carries that offer ID through checkout. Display currency supports EUR and USD using an adjustable demo rate in `src/ui/money.ts`; database prices remain EUR.
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`.
+
+### 5. Verify the API
+
+Visit `http://127.0.0.1:8001/api/health`.
+
+Expected response:
+
+```json
+{
+  "status": "ok",
+  "database": "sqlite"
+}
+```
+
+The API initializes the SQLite database and adds missing demo data automatically.
+
+## Project Structure
+
+```text
+ameba/
+├── api/                  # PHP REST API
+├── database/             # SQLite schema and demo seed data
+├── design-references/    # Design reference screenshots
+├── docs/                 # API documentation and AI logs
+├── public/               # Static assets and logos
+├── scripts/              # Development utilities
+├── src/                  # React application
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+## API & Database
+
+- Homepage content is loaded from backend endpoints.
+- Catalog search, filtering, and sorting are API-backed.
+- Product pages support multiple seller offers.
+- Checkout validates inventory and uses database transactions.
+- Digital keys are delivered per purchased unit.
+- Wishlist and order history are associated with authenticated users.
+
+See [`docs/API.md`](docs/API.md) for API documentation.
 
 ## Deployment
 
-Deploy `api/` to a PHP 8.1+ host with PDO SQLite enabled and writable persistent storage. Set `DB_PATH` to that storage location, `APP_ORIGIN` to the public frontend origin, and `SESSION_SECURE=true`; use HTTPS. Build the frontend with `npm install && npm run build`, setting `VITE_API_BASE` to the API URL plus `/api` (for example `https://api.example.com/api`), then publish `dist/` to a static host. SQLite is suitable for this demo; use managed PostgreSQL/MySQL and a shared session store for multi-instance production hosting.
+The frontend and backend must be hosted separately or on a provider supporting both.
 
-## GitHub
+- Build the frontend with `npm run build`.
+- Publish the generated `dist/` directory.
+- Deploy `api/` to a PHP host with PDO SQLite enabled.
+- Configure `VITE_API_BASE`, `DB_PATH`, `APP_ORIGIN`, and `SESSION_SECURE`.
+- Use HTTPS and persistent storage for the SQLite database.
 
-Create a repository, run `git init`, commit the project, then add the GitHub remote and push from your machine. No repository remote or Git executable was available in the inspected environment. Review `.gitignore` and keep `.env` and database files out of version control.
+**Deployment status:** Not yet deployed.
 
 ## Limitations
 
-- Seller data, images, and keys are demonstration content; keys are not redeemable.
-- Payment is simulated; no real payments are processed.
-- Search typo tolerance is a lightweight fallback, not a dedicated search index.
-- PHP is unavailable in the current environment, so API runtime execution and full end-to-end verification require PHP + PDO SQLite.
-- No public repository or deployed URL has been created.
+- Products, sellers, images, and digital keys are demo content.
+- Digital keys are not redeemable.
+- Payments are simulated; no real transactions are processed.
+- Currency conversion uses a configurable demo exchange rate.
+- SQLite is intended for this MVP, not large-scale production use.
 
-## Conversation log
+## GitHub
 
-The human-readable session export is in [`docs/AI_LOG.md`](docs/AI_LOG.md). `docs/AI_LOG_SOURCE.jsonl` is the preserved original source snapshot; `docs/AI_LOG_SOURCE_CURRENT.jsonl` is the newer snapshot. Use `node scripts/export-history.mjs <session.jsonl>` to refresh the Markdown export from a Codex rollout JSONL file.
+[https://github.com/GuMinukea/AMEBA](https://github.com/GuMinukea/AMEBA)
+
+## AI-Assisted Development
+
+AI-assisted development conversation history is included in `docs/`:
+
+- `AI_LOG.md` – Human-readable conversation export.
+- `AI_LOG_SOURCE.jsonl` – Original source snapshot.
+- `AI_LOG_SOURCE_CURRENT.jsonl` – Updated source snapshot.
