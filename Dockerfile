@@ -22,6 +22,8 @@ RUN apt-get update \
 WORKDIR /var/www/html
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 COPY --from=frontend-build /app/dist/ /var/www/html/
+RUN echo "=== CHECKING FRONTEND FILES ===" \
+    && find /var/www/html -maxdepth 2 -type f -printf '%p (%s bytes)\n' | sort
 COPY api/ /var/www/html/api/
 COPY database/demo-catalog.json /var/www/html/database/demo-catalog.json
 COPY docker/entrypoint.sh /usr/local/bin/ameba-entrypoint
