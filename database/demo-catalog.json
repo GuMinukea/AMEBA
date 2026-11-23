@@ -1,0 +1,721 @@
+[
+  {
+    "slug": "erldn",
+    "title": "Elden Ring",
+    "category": "Action RPG",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Rise, Tarnished. Explore the Lands Between in this acclaimed open-world action RPG.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg",
+    "popularity": 4821,
+    "price": 35.49,
+    "old_price": 59.99,
+    "genres": [
+      "Action RPG",
+      "Open World",
+      "Adventure"
+    ]
+  },
+  {
+    "slug": "cyber",
+    "title": "Cyberpunk 2077: Ultimate Edition",
+    "category": "RPG",
+    "platform": "PC",
+    "region": "Europe",
+    "description": "Become V, a mercenary outlaw going after a one-of-a-kind implant in Night City. Includes Phantom Liberty.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
+    "popularity": 3990,
+    "price": 32.89,
+    "old_price": 59.99,
+    "genres": [
+      "RPG",
+      "Action",
+      "Open World"
+    ]
+  },
+  {
+    "slug": "bg3pc",
+    "title": "Baldur's Gate 3",
+    "category": "RPG",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Gather your party and return to the Forgotten Realms in this story-rich, next-generation RPG.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg",
+    "popularity": 3682,
+    "price": 47.99,
+    "old_price": 59.99,
+    "genres": [
+      "RPG",
+      "Strategy",
+      "Turn-Based"
+    ]
+  },
+  {
+    "slug": "hogw",
+    "title": "Hogwarts Legacy",
+    "category": "Adventure",
+    "platform": "PlayStation 5",
+    "region": "Europe",
+    "description": "Experience Hogwarts in the 1800s and decide the fate of the wizarding world.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/header.jpg",
+    "popularity": 2920,
+    "price": 24.79,
+    "old_price": 69.99,
+    "genres": [
+      "Adventure",
+      "Action RPG",
+      "Open World"
+    ]
+  },
+  {
+    "slug": "rdr2",
+    "title": "Red Dead Redemption 2",
+    "category": "Adventure",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Arthur Morgan and the Van der Linde gang are outlaws on the run across America.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg",
+    "popularity": 2740,
+    "price": 19.99,
+    "old_price": 59.99,
+    "genres": [
+      "Adventure",
+      "Action",
+      "Open World"
+    ]
+  },
+  {
+    "slug": "fc25",
+    "title": "EA Sports FC 25",
+    "category": "Sports",
+    "platform": "Xbox Series X|S",
+    "region": "Europe",
+    "description": "Play football with clubs and players from leagues around the world.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/header.jpg",
+    "popularity": 2510,
+    "price": 29.89,
+    "old_price": 69.99,
+    "genres": [
+      "Sports",
+      "Simulation",
+      "Multiplayer"
+    ]
+  },
+  {
+    "slug": "star",
+    "title": "Stardew Valley",
+    "category": "Indie",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Build the farm of your dreams, grow crops, raise animals, and become part of the community.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
+    "popularity": 2360,
+    "price": 8.49,
+    "old_price": 14.99,
+    "genres": [
+      "Simulation",
+      "RPG",
+      "Indie"
+    ]
+  },
+  {
+    "slug": "witch",
+    "title": "The Witcher 3: Wild Hunt",
+    "category": "RPG",
+    "platform": "PC",
+    "region": "Global",
+    "description": "You are Geralt of Rivia, mercenary monster slayer. Your choices shape an epic story.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg",
+    "popularity": 2100,
+    "price": 11.99,
+    "old_price": 39.99,
+    "genres": [
+      "RPG",
+      "Action RPG",
+      "Open World"
+    ]
+  },
+  {
+    "slug": "zelda-totk",
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "category": "Adventure",
+    "platform": "Nintendo Switch",
+    "region": "Europe",
+    "description": "Join Link on a journey across Hyrule and the skies above to uncover the source of a new threat.",
+    "image": "https://panamericana.vtexassets.com/arquivos/ids/494588/juego-the-legend-of-zelda-tears-of-the-kingdom-para-nintendo-switch-45496597092.jpg?v=638194363332400000",
+    "popularity": 1990,
+    "price": 49.99,
+    "old_price": 69.99,
+    "genres": [
+      "Adventure",
+      "Action",
+      "Open World"
+    ]
+  },
+  {
+    "slug": "gowr",
+    "title": "God of War Ragnarök",
+    "category": "Action",
+    "platform": "PlayStation 5",
+    "region": "Europe",
+    "description": "Embark on a journey with Kratos and Atreus as they face the Norse realms and Ragnarök.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg",
+    "popularity": 1750,
+    "price": 49.99,
+    "old_price": 69.99,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Action RPG"
+    ]
+  },
+  {
+    "slug": "hades",
+    "title": "Hades II",
+    "category": "Indie",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Battle beyond the Underworld using dark sorcery to take on the Titan of Time.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg",
+    "popularity": 1620,
+    "price": 24.5,
+    "old_price": 29.99,
+    "genres": [
+      "Action",
+      "Roguelike",
+      "Indie"
+    ]
+  },
+  {
+    "slug": "hell",
+    "title": "Helldivers 2",
+    "category": "Action",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Join the Helldivers and fight for freedom across a hostile galaxy.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg",
+    "popularity": 1510,
+    "price": 29.99,
+    "old_price": 39.99,
+    "genres": [
+      "Action",
+      "Shooter",
+      "Multiplayer"
+    ]
+  },
+  {
+    "slug": "mario-wonder",
+    "title": "Super Mario Bros. Wonder",
+    "category": "Platformer",
+    "platform": "Nintendo Switch",
+    "region": "Europe",
+    "description": "Digital listing for Super Mario Bros. Wonder. Check platform and region details before purchase.",
+    "image": "https://mario.wiki.gallery/images/9/9e/SMBW_box_NA.png",
+    "popularity": 1480,
+    "price": 49.99,
+    "old_price": 59.99,
+    "genres": [
+      "Platformer",
+      "Adventure",
+      "Family"
+    ]
+  },
+  {
+    "slug": "animal-crossing",
+    "title": "Animal Crossing: New Horizons",
+    "category": "Simulation",
+    "platform": "Nintendo Switch",
+    "region": "Europe",
+    "description": "Digital listing for Animal Crossing: New Horizons. Check platform and region details before purchase.",
+    "image": "https://cdn.awsli.com.br/2500x2500/1919/1919257/produto/227859580/animalcrossing-1-c9hwj4b6xt.png",
+    "popularity": 1390,
+    "price": 44.99,
+    "old_price": 59.99,
+    "genres": [
+      "Simulation",
+      "Social",
+      "Family"
+    ]
+  },
+  {
+    "slug": "mario-kart-8",
+    "title": "Mario Kart 8 Deluxe",
+    "category": "Racing",
+    "platform": "Nintendo Switch",
+    "region": "Europe",
+    "description": "Digital listing for Mario Kart 8 Deluxe. Check platform and region details before purchase.",
+    "image": "https://gshoppty.com/cdn/shop/products/MarioKart8DeluxeparaNintendoSwitch-GshopPty.jpg?v=1673976618",
+    "popularity": 1310,
+    "price": 47.99,
+    "old_price": 59.99,
+    "genres": [
+      "Racing",
+      "Sports",
+      "Multiplayer"
+    ]
+  },
+  {
+    "slug": "hollow-knight",
+    "title": "Hollow Knight",
+    "category": "Indie",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Digital listing for Hollow Knight. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg",
+    "popularity": 1270,
+    "price": 7.49,
+    "old_price": 14.99,
+    "genres": [
+      "Metroidvania",
+      "Platformer",
+      "Indie"
+    ]
+  },
+  {
+    "slug": "terraria",
+    "title": "Terraria",
+    "category": "Adventure",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Digital listing for Terraria. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg",
+    "popularity": 1220,
+    "price": 4.49,
+    "old_price": 9.99,
+    "genres": [
+      "Adventure",
+      "Sandbox",
+      "Survival"
+    ]
+  },
+  {
+    "slug": "portal-2",
+    "title": "Portal 2",
+    "category": "Puzzle",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Digital listing for Portal 2. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg",
+    "popularity": 1140,
+    "price": 2.99,
+    "old_price": 9.99,
+    "genres": [
+      "Puzzle",
+      "Adventure",
+      "Platformer"
+    ]
+  },
+  {
+    "slug": "slay-the-spire",
+    "title": "Slay the Spire",
+    "category": "Strategy",
+    "platform": "PC",
+    "region": "Global",
+    "description": "Digital listing for Slay the Spire. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
+    "popularity": 1080,
+    "price": 8.99,
+    "old_price": 24.99,
+    "genres": [
+      "Strategy",
+      "Roguelike",
+      "Deckbuilder"
+    ]
+  },
+  {
+    "slug": "forza-horizon-5",
+    "title": "Forza Horizon 5",
+    "category": "Racing",
+    "platform": "Xbox Series X|S",
+    "region": "Europe",
+    "description": "Digital listing for Forza Horizon 5. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg",
+    "popularity": 1030,
+    "price": 34.99,
+    "old_price": 59.99,
+    "genres": [
+      "Racing",
+      "Simulation",
+      "Open World"
+    ]
+  },
+  {
+    "slug": "sea-of-thieves",
+    "title": "Sea of Thieves",
+    "category": "Adventure",
+    "platform": "Xbox Series X|S",
+    "region": "Global",
+    "description": "Digital listing for Sea of Thieves. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/header.jpg",
+    "popularity": 990,
+    "price": 19.99,
+    "old_price": 39.99,
+    "genres": [
+      "Adventure",
+      "Action",
+      "Multiplayer"
+    ]
+  },
+  {
+    "slug": "it-takes-two",
+    "title": "It Takes Two",
+    "category": "Adventure",
+    "platform": "PlayStation 5",
+    "region": "Europe",
+    "description": "Digital listing for It Takes Two. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg",
+    "popularity": 960,
+    "price": 21.99,
+    "old_price": 39.99,
+    "genres": [
+      "Adventure",
+      "Co-op",
+      "Puzzle"
+    ]
+  },
+  {
+    "slug": "ori-will-of-wisps",
+    "title": "Ori and the Will of the Wisps",
+    "category": "Adventure",
+    "platform": "Xbox Series X|S",
+    "region": "Global",
+    "description": "Digital listing for Ori and the Will of the Wisps. Check platform and region details before purchase.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/header.jpg",
+    "popularity": 890,
+    "price": 5.49,
+    "old_price": 29.99,
+    "genres": [
+      "Adventure",
+      "Action",
+      "Platformer"
+    ]
+  },
+  {
+    "slug": "minecraft-java",
+    "title": "Minecraft: Java & Bedrock Edition",
+    "category": "Sandbox",
+    "genres": [
+      "Sandbox",
+      "Survival",
+      "Simulation",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Explore, build, and survive in a boundless block-based world, alone or with friends.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/header.jpg",
+    "popularity": 657,
+    "price": 23.99,
+    "old_price": 29.99
+  },
+  {
+    "slug": "gta-v-enhanced",
+    "title": "Grand Theft Auto V Enhanced",
+    "category": "Action",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Open World"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Plan daring heists and explore the sprawling city of Los Santos in Rockstar's open-world crime epic.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg",
+    "popularity": 656,
+    "price": 24.99,
+    "old_price": 39.99
+  },
+  {
+    "slug": "counter-strike-2",
+    "title": "Counter-Strike 2",
+    "category": "Shooter",
+    "genres": [
+      "Shooter",
+      "FPS",
+      "Tactical",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "The next era of competitive objective-based tactical shooter gameplay.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg",
+    "popularity": 655,
+    "price": 9.99,
+    "old_price": 14.99
+  },
+  {
+    "slug": "apex-legends",
+    "title": "Apex Legends",
+    "category": "Shooter",
+    "genres": [
+      "Shooter",
+      "FPS",
+      "Battle Royale",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Choose a Legend, squad up, and fight for victory in a fast-paced hero battle royale.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg",
+    "popularity": 654,
+    "price": 9.99,
+    "old_price": 19.99
+  },
+  {
+    "slug": "valorant",
+    "title": "VALORANT",
+    "category": "Shooter",
+    "genres": [
+      "Shooter",
+      "FPS",
+      "Tactical",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Outthink and outplay in a precise, character-based tactical shooter.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/header.jpg",
+    "popularity": 653,
+    "price": 9.99,
+    "old_price": 19.99
+  },
+  {
+    "slug": "civilization-vi",
+    "title": "Sid Meier's Civilization VI",
+    "category": "Strategy",
+    "genres": [
+      "Strategy",
+      "Turn-Based",
+      "Simulation"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Build an empire to stand the test of time in this acclaimed turn-based strategy game.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg",
+    "popularity": 652,
+    "price": 5.99,
+    "old_price": 29.99
+  },
+  {
+    "slug": "the-sims-4",
+    "title": "The Sims 4",
+    "category": "Simulation",
+    "genres": [
+      "Simulation",
+      "Social",
+      "Sandbox"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Create Sims, build homes, and guide stories in a life simulation sandbox.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg",
+    "popularity": 651,
+    "price": 9.99,
+    "old_price": 19.99
+  },
+  {
+    "slug": "resident-evil-4",
+    "title": "Resident Evil 4",
+    "category": "Horror",
+    "genres": [
+      "Horror",
+      "Action",
+      "Shooter"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Survive a harrowing rescue mission in this reimagining of the survival horror classic.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
+    "popularity": 650,
+    "price": 24.99,
+    "old_price": 39.99
+  },
+  {
+    "slug": "doom-eternal",
+    "title": "DOOM Eternal",
+    "category": "Shooter",
+    "genres": [
+      "Shooter",
+      "FPS",
+      "Action"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Rip and tear through demon hordes in a blisteringly fast single-player shooter.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/header.jpg",
+    "popularity": 649,
+    "price": 9.99,
+    "old_price": 39.99
+  },
+  {
+    "slug": "dota-2",
+    "title": "Dota 2",
+    "category": "Strategy",
+    "genres": [
+      "MOBA",
+      "Strategy",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Master a hero and work with your team in one of the world's deepest competitive MOBAs.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg",
+    "popularity": 648,
+    "price": 9.99,
+    "old_price": 19.99
+  },
+  {
+    "slug": "overwatch-2",
+    "title": "Overwatch 2",
+    "category": "Shooter",
+    "genres": [
+      "Shooter",
+      "FPS",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Team up as a roster of heroes in this colorful objective-based team shooter.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/header.jpg",
+    "popularity": 647,
+    "price": 9.99,
+    "old_price": 19.99
+  },
+  {
+    "slug": "factorio",
+    "title": "Factorio",
+    "category": "Simulation",
+    "genres": [
+      "Simulation",
+      "Strategy",
+      "Sandbox"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Design and automate an expanding factory while defending it from the local wildlife.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg",
+    "popularity": 646,
+    "price": 25.99,
+    "old_price": 35
+  },
+  {
+    "slug": "euro-truck-simulator-2",
+    "title": "Euro Truck Simulator 2",
+    "category": "Simulation",
+    "genres": [
+      "Simulation",
+      "Racing",
+      "Open World"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Deliver cargo across an expansive recreation of European roads and cities.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/header.jpg",
+    "popularity": 645,
+    "price": 4.99,
+    "old_price": 19.99
+  },
+  {
+    "slug": "dead-by-daylight",
+    "title": "Dead by Daylight",
+    "category": "Horror",
+    "genres": [
+      "Horror",
+      "Multiplayer",
+      "Survival"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "A deadly game of cat and mouse for four survivors and one relentless killer.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg",
+    "popularity": 644,
+    "price": 14.99,
+    "old_price": 29.99
+  },
+  {
+    "slug": "call-of-duty-mwiii",
+    "title": "Call of Duty: Modern Warfare III",
+    "category": "Shooter",
+    "genres": [
+      "Shooter",
+      "FPS",
+      "Action",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Join Task Force 141 in a cinematic campaign and competitive multiplayer battles.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2519060/header.jpg",
+    "popularity": 643,
+    "price": 39.99,
+    "old_price": 69.99
+  },
+  {
+    "slug": "subnautica",
+    "title": "Subnautica",
+    "category": "Adventure",
+    "genres": [
+      "Adventure",
+      "Survival",
+      "Open World"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Explore an alien ocean, craft equipment, and uncover the secrets of an underwater world.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg",
+    "popularity": 642,
+    "price": 8.99,
+    "old_price": 29.99
+  },
+  {
+    "slug": "among-us",
+    "title": "Among Us",
+    "category": "Party",
+    "genres": [
+      "Party",
+      "Social",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Work together to prepare your spaceship, but watch for impostors hiding among the crew.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg",
+    "popularity": 641,
+    "price": 3.99,
+    "old_price": 4.99
+  },
+  {
+    "slug": "street-fighter-6",
+    "title": "Street Fighter 6",
+    "category": "Fighting",
+    "genres": [
+      "Fighting",
+      "Action",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Step into the ring with a new generation of fighters and accessible, deep combat.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg",
+    "popularity": 640,
+    "price": 29.99,
+    "old_price": 59.99
+  },
+  {
+    "slug": "monster-hunter-world",
+    "title": "Monster Hunter: World",
+    "category": "Action RPG",
+    "genres": [
+      "Action RPG",
+      "Adventure",
+      "Multiplayer"
+    ],
+    "platform": "PC",
+    "region": "Global",
+    "description": "Track and hunt formidable creatures in a living ecosystem, solo or with a hunting party.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg",
+    "popularity": 639,
+    "price": 9.99,
+    "old_price": 29.99
+  }
+]

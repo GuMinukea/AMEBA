@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.DS_Store
+
+# Temporary files and browser profiles
+.tmp/
+.npm-cache/
+
